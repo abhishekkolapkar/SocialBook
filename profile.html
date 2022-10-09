@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | SocialBook</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font-awesome icons cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <nav>
+      <div class="nav-left flex">
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="logo" class="logo">
+        </a>
+        <ul>
+          <li><img src="./assets/notification.png" alt="notification"></li>
+          <li><img src="./assets/inbox.png" alt="notification"></li>
+          <li><img src="./assets/video.png" alt="notification"></li>
+        </ul>
+      </div>
+      <div class="nav-right flex">
+        <div class="search-box flex">
+          <img src="./assets/search.png" alt="search-icon">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-user-icon online" onclick="dropdown()">
+          <img src="./assets/profile-pic.png" alt="">
+        </div>
+      </div>
+
+      <!-- dropdown menu -->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png" alt="">
+            <div>
+              <p>John Nicholson</p>
+              <a href="./profile.html">See your Profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="./assets/feedback.png" alt="">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="./assets/setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/help.png" class="settings-icon">
+            <a href="#">Help & Support <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/display.png" class="settings-icon">
+            <a href="#">Display & Accessibility <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/logout.png" class="settings-icon">
+            <a href="#">Logout <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main section -->
+  <main>
+    <div class="profile-container">
+      <img src="./assets/cover.png" class="cover-img">
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="./assets/profile.png" class="pd-img">
+            <div>
+              <h3>Jack Nisholson</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="./assets/member-1.png" alt="">
+              <img src="./assets/member-2.png" alt="">
+              <img src="./assets/member-3.png" alt="">
+              <img src="./assets/member-5.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button">
+            <img src="./assets/add-friends.png" alt=""> Friend
+          </button>
+          <button type="button">
+            <img src="./assets/message.png" alt=""> Message
+          </button>
+          <br>
+          <a href="#"><img src="./assets/more.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">Belive in yourself and you can do unbelievable things. <img src="./assets/feeling.png">
+            </p>
+            <hr>
+
+            <ul>
+              <li>
+                <img src="./assets/profile-job.png" alt=""> Director at 99media Ltd
+              </li>
+              <li>
+                <img src="./assets/profile-study.png" alt=""> Studied at Amity University
+              </li>
+              <li>
+                <img src="./assets/profile-study.png" alt=""> Went to DPS Delhi
+              </li>
+              <li>
+                <img src="./assets/profile-home.png" alt=""> Lives in Bangalore, India
+              </li>
+              <li>
+                <img src="./assets/profile-location.png" alt=""> From Bangalore, India
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+            <div class="photo-box">
+              <div>
+                <img src="./assets/photo1.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/photo2.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/photo3.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/photo4.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/photo5.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/photo6.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#">All Friends</a>
+            </div>
+
+            <p>120 (10 mutual)</p>
+            <div class="friends-box">
+              <div>
+                <img src="./assets/member-1.png" alt="">
+                <p>Joseph N</p>
+              </div>
+              <div>
+                <img src="./assets/member-2.png" alt="">
+                <p>Nathan N</p>
+              </div>
+              <div>
+                <img src="./assets/member-3.png" alt="">
+                <p>George D</p>
+              </div>
+              <div>
+                <img src="./assets/member-4.png" alt="">
+                <p>Francis L</p>
+              </div>
+              <div>
+                <img src="./assets/member-5.png" alt="">
+                <p>Anthony E</p>
+              </div>
+              <div>
+                <img src="./assets/member-6.png" alt="">
+                <p>Micheal A</p>
+              </div>
+              <div>
+                <img src="./assets/member-7.png" alt="">
+                <p>Edward M</p>
+              </div>
+              <div>
+                <img src="./assets/member-8.png" alt="">
+                <p>Bradon C</p>
+              </div>
+              <div>
+                <img src="./assets/member-9.png" alt="">
+                <p>James Doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="./assets/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <small>Public <i class="fas fa-caret-down"></i></small>
+              </div>
+            </div>
+  
+            <div class="post-input-container">
+              <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+  
+              <div class="add-post-links">
+                <a href="#">
+                  <img src="./assets/live-video.png" alt="">
+                  Live Video
+                </a>
+                <a href="#">
+                  <img src="./assets/photo.png" alt="">
+                  Photo/Video
+                </a>
+                <a href="#">
+                  <img src="./assets/feeling.png" alt="">
+                  Feeling/Activity
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./assets/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 13:40PM</span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <p class="post-text">Subscribe our YouTube channel to watch more Videos on website developments & UI designs. 
+              <a href="#">#Tutorials</a>
+              <a href="#">#You Tube</a>
+            </p>
+            <img src="./assets/feed-image-1.png" class="post-img">
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./assets/like.png" alt=""> 120
+                </div>
+                <div>
+                  <img src="./assets/comments.png" alt=""> 45
+                </div>
+                <div>
+                  <img src="./assets/share.png" alt="">
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./assets/profile-pic.png" alt="">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+  
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./assets/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 13:40PM</span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <p class="post-text">Like and share this video with friends, tag facebook page on your post. Ask ypur doubts in the comments.
+              <a href="#">#Tutorials</a>
+              <a href="#">#You Tube</a>
+            </p>
+            <img src="./assets/feed-image-2.png" class="post-img">
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./assets/like.png" alt=""> 120
+                </div>
+                <div>
+                  <img src="./assets/comments.png" alt=""> 45
+                </div>
+                <div>
+                  <img src="./assets/share.png" alt="">
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./assets/profile-pic.png" alt="">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+  
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./assets/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 13:40PM</span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <p class="post-text">Like and share this video with friends, tag facebook page on your post. Ask ypur doubts in the comments.
+              <a href="#">#Tutorials</a>
+              <a href="#">#You Tube</a>
+            </p>
+            <img src="./assets/feed-image-3.png" class="post-img">
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./assets/like.png" alt=""> 120
+                </div>
+                <div>
+                  <img src="./assets/comments.png" alt=""> 45
+                </div>
+                <div>
+                  <img src="./assets/share.png" alt="">
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./assets/profile-pic.png" alt="">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+  
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./assets/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 13:40PM</span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <p class="post-text">Like and share this video with friends, tag facebook page on your post. Ask ypur doubts in the comments.
+              <a href="#">#Tutorials</a>
+              <a href="#">#You Tube</a>
+            </p>
+            <img src="./assets/feed-image-4.png" class="post-img">
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./assets/like.png" alt=""> 120
+                </div>
+                <div>
+                  <img src="./assets/comments.png" alt=""> 45
+                </div>
+                <div>
+                  <img src="./assets/share.png" alt="">
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./assets/profile-pic.png" alt="">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+  
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./assets/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 13:40PM</span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <p class="post-text">Like and share this video with friends, tag facebook page on your post. Ask ypur doubts in the comments.
+              <a href="#">#Tutorials</a>
+              <a href="#">#You Tube</a>
+            </p>
+            <img src="./assets/feed-image-5.png" class="post-img">
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./assets/like.png" alt=""> 120
+                </div>
+                <div>
+                  <img src="./assets/comments.png" alt=""> 45
+                </div>
+                <div>
+                  <img src="./assets/share.png" alt="">
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./assets/profile-pic.png" alt="">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer section -->
+  <footer>
+    <p>&copy;Cpoyright 2022 - SocialBook</p>
+  </footer>
+
+
+  <!-- JavaScript file -->
+  <script src="./script.js"></script>
+</body>
+</html>
