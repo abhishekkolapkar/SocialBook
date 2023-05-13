@@ -1,17 +1,10 @@
 
 # SocialBook
+This is a fully responsive online social network website UI design like facebook.
 
-This is a fully responsive online social network website like facebook.
+## Demo: <a href='https://social-book-ui.netlify.app/'>Live Preview</a>
 
-
-## Live Preview
-
-SocialBook - https://socia-book.netlify.app/
-
-
-## Technology Used
-
-**UI Design:** HTML, CSS
-
-**Functionality:** JavaScript
-
+## Tech-Stack :
+* HTML5
+* CSS3
+* JavaScript
